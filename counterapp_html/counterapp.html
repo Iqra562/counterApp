@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="counter-div">
+            <h1>Counter App</h1>
+            <span class="count" >0</span>
+            <hr>
+            <div class="buttons">
+                <button class="subtract">
+                    <i class="fas fa-arrow-down">
+                        <!-- <img src="608336.png" alt=""> -->
+                    </i>
+                    Sub
+                </button>
+                <button class="reset">
+                    <i class="fas fa-spinner">
+     <!-- <img src="load.png" alt=""> -->
+                    </i>
+                    Reset
+                </button>
+                <button class="add">
+                    <i class="fas fa-arrow-up">
+                <!-- <img src="arow up.png" alt=""> -->
+                    </i>
+                    Add
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let count = document.querySelector(".count");
+let add = document.querySelector(".add");
+let resetcount = document.querySelector(".reset");
+let sub = document.querySelector(".subtract");
+
+add.addEventListener("click", () => {
+    count.innerHTML++;
+    fun();
+   
+});
+sub.addEventListener("click", () => {
+    count.innerHTML--;
+    fun();
+});
+resetcount.addEventListener("click", () => {
+    count.innerHTML = 0;
+    fun();
+});
+function fun(){
+    if(count.innerHTML > 0){
+        count.style.color = "blue";
+    }
+    else if(count.innerHTML < 0){
+        count.style.color = "red";
+    }
+    else if(count.innerHTML == 0) {
+        count.style.color = "white";
+
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 98vh;
+}
+.counter-div{
+    width: 550px;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+     border-radius: 5px;
+}
+.counter-div > *{
+    margin-bottom: 2rem;
+}
+.count{
+    font-size: 64px;
+    color:white;
+}
+.buttons button{
+    padding: 16px;
+    margin: 0 16px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    border-radius:  3px;
+    color:  white;
+    font-weight: 700;
+    cursor: pointer;
+}
+ i img{
+     height: 24px;
+     width: 10px;
+}
+button.subtract{
+    background-color: orangered;
+    
+}
+button.reset{
+    background-color: white;
+    color: black;
+    
+}
+button.add{
+    background-color:  green;
+}
+span{
+    color: green;
+}
